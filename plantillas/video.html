@@ -1,7 +1,16 @@
 <!-- The video -->
 <div id="videoBox">
-  <video id="video" class="" autoplay muted loop id="myVideo">
+  <video id="video" class="" autoplay muted loop poster="data:image/gif,AAAA">
     <source id="video-src" src="diseño/img/marquesmall.mp4" type="video/mp4" >
   </video>    
 	
 </div>
+<script>
+ $('#video').on('loadstart', function (event) {
+    $(this).addClass('loading');
+  });
+  $('#video').on('canplay', function (event) {
+    $(this).removeClass('loading');
+    $(this).attr('poster', '');
+  });
+</script>

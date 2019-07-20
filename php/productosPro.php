@@ -3,7 +3,7 @@
  <section id="prodMenu">
  	<div id="productosBox">
 		<div id="titleMenu">
-			<h1>PRODUCTOS</h1><img src="diseño/img/original.png" alt="">
+		<!--<img src="diseño/img/original.png" alt="">--><h1>PRODUCTOS</h1>
 		</div>
 	    <div id="menuBox">
 	    	<div class="menuOpt left">
@@ -19,10 +19,10 @@
 				</div>
 	    	</div>
  		</div>
-		<!-- 
+		
 		 <div class="png-box">
  			<img id="original_png" src="diseño/img/original.png" alt="">
- 		</div>-->
+		 </div>
  		<div id="menuBox">
 	    	<div class="menuOpt left">
 				<img name="bebidas" onclick="loadMenu(this)" src="diseño/img/bebidas.png" alt="" class="menuOpt-img menuOpt-txt-left">
@@ -72,7 +72,7 @@
 <section id="franquiciasPro">
 	
 	<div id="fran_Box" class="">
-		<h1 class="franText">Estamos en toda la república</h1>
+		<h1 class="franText">¡Estamos en toda la república!</h1>
 		<p class="franText"><small>Da clic en la sucursal del mapa y vísitanos</small></p>
 	</div>
 	<?php	

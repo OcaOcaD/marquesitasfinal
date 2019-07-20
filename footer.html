@@ -1,4 +1,61 @@
-  <section id="footer" class="sticky-bottom">
+  <style>
+    .footer{
+      background-color: #3b2314; 
+      background-color: black; 
+      height: 40px;
+      width: 100vw;
+      position: fixed;
+      display: flex;
+      bottom: 0;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+      .footer__left{
+        order: 1;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+        .footer__left label{
+          padding: 0;
+          margin: 0;
+          padding-right: 1em;
+          padding-left: 1em;
+          color: white;
+        }
+      .footer__right{
+        order: 2;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 3em;
+      }
+        .footer__right button{
+          padding: 0;
+          margin: 0;
+          padding-right: 1em;
+          padding-left: 1em;
+        }
+  </style>
+  <div id="footer" class="footer">
+    <div class="footer__left">
+      <label>2019</label>
+      <label class="link" onclick="window.location.href </center>= 'marquenieve.com.mx/nueva'">W W W . M A R Q U E N I E V E . C O M . M X</label>
+      <label class="link" onclick="window.location.href = '</center>#missing'">AVISO DE PRIVACIDAD</label>
+    </div>
+    <div class="footer__right">
+        <button onclick="window.open('https\://twitter.com/mlasoriginales')" class="sn-t"><i class="fab fa-twitter fa-2x"></i></button>
+        <button onclick="window.open('https\://www.instagram.com/marquesitaslasoriginales')" class="sn-i"><i class="fab fa-instagram fa-2x"></i></button>
+        <button onclick="window.open('https\://www.facebook.com/marquesitasoriginales')" class="sn-f"><i class="fab fa-facebook fa-2x"></i></button>
+    </div>
+  </div>
+  
+  <!----<section id="footer" class="sticky-bottom">
     <div class="block">
       <center><h1 class="footer-txt">¡SIGUENOS Y COMPARTE!</h1></center>
       <center><p class="footer-txt"> COMPARTE CON NOSOTROS TU EXPERIENCIA MARQUESITA A TRAVÉS DE NUESTRAS REDES SOCIALES.</p></center>
@@ -13,16 +70,10 @@
         <center><label>2019</label></center>
       </div>
       <div id="l2" class="thirdP">
-        <center><label class="link" onclick="window.location.href </center>= 'marquenieve.com.mx/nueva'">W W W . M A R Q U E N I E V E . C O M . M X</label>
+        <center><label class="link" onclick="window.location.href </center>= 'marquenieve.com.mx/nueva'">W W W . M A R Q U E N I E V E . C O M . M X</label></center>
       </div>
       <div id="l3" class="thirdP">
-        <center><label class="link" onclick="window.location.href = '</center>#missing'">AVISO DE PRIVACIDAD</label>
+        <center><label class="link" onclick="window.location.href = '</center>#missing'">AVISO DE PRIVACIDAD</label></center>
       </div>
     </div>
-    <div id= "buttons-box"class="link-box">
-      <!-- <button onclick="window.location.href = 'index.php#productos'">PRODUCTOS</button>
-      <button onclick="window.location.href = 'index.php#sucursales'">SUCURSALES</button>
-      <button onclick="window.location.href = 'fran.php#disponible'">FRANQUICIAS</button>
-      <button onclick="window.location.href = 'index.php#contacto'">CONTACTO</button>
-    </div> -->
-  </section>
+  </section>-->

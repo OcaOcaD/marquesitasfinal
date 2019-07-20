@@ -143,14 +143,6 @@ productos y la innovacion en su modelo de negocio.</p>
     });
   });
 </script>
-
-<script type="">
-  $( document ).ready(function() {
-    $('.carousel').carousel({
-      interval: 3000
-    })
-  });
-</script>
 <script>
   var img;
       var carousel_size = $('#carousel_size').val();

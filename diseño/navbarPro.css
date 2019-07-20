@@ -72,6 +72,9 @@
 	    transform: translate(-50%,0%);
 	    z-index: 1;
 	}
+	video.loading {
+		background: black url(img/video_loader.jpg) center center no-repeat;
+	}
 	#video-src{
 		width: 100vw;
 		height: auto;

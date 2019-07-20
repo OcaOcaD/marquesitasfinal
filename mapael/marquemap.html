@@ -1,5 +1,8 @@
 
 <div class="todo">
+    <div class="statesContainer">
+
+    
     <div class="states__info">        
         <div class="state">
                 <h1>COAHUILA</h1>
@@ -114,6 +117,7 @@
             </ul>
         </div>
     </div>
+    </div>
     <div class="mapcontainer">
         <div class="map">
             <span>Alternative content for the map</span>
@@ -148,7 +152,8 @@ $(".mapcontainer").mapael(
         },
         defaultArea:{
             attrs:{
-                fill: "#3b2314"
+                fill: "#3b2314",
+                'text-anchor': 'start'
             },
             attrsHover: {
                 fill: "#6f4d1f"
@@ -168,9 +173,9 @@ $(".mapcontainer").mapael(
             
             tooltip: {
                 content: "<h3>JALISCO</h3><ul>\
-                    <li><div><p>AV. GUADALUPE 6370-D 45030 ZAPOPAN, JALISCO</p><p>TELÉFONO: --- </p>  <p>CORREO: ---</p></div></li>\
-                    <li><div><p>ESTADIO CHARROS: DE OCTUBRE A ENERO</p><p>TELÉFONO: </p><p>CORREO: </p></div></li>\
-                    <li><div><p>ESTADIO AKRON: TODOS LOS PARTIDOS DE CHIVAS COMO LOCAL</p><p>TELÉFONO: --- </p><p>CORREO: ---</p></div></li>\
+                    <li><div><p>AV. GUADALUPE 6370-D 45030 ZAPOPAN, JALISCO</p></div></li>\
+                    <li><div><p>ESTADIO CHARROS: DE OCTUBRE A ENERO</p></div></li>\
+                    <li><div><p>ESTADIO AKRON: TODOS LOS PARTIDOS DE CHIVAS COMO LOCAL</p></div></li>\
                     <li><div><p>PLAZA DE TOROS: CORRIDAS</p><p>TELÉFONO: 3333992842</p><p>CORREO: ventas@marquenieve.com.mx</p></div></li>\
                 </ul>"
             }
@@ -185,7 +190,8 @@ $(".mapcontainer").mapael(
             value: "1435448",
             //href: "#",
             tooltip: {
-                content: "<h3>Torreón Coahuila</h3>"
+                content: "<h3>Torreón, Coahuila</h3>\
+                <p>BLVD. INDEPENDENCIA #1754 COL. NAVARRO, 27100 </p>"
             }
         },
         "hidalgo":{
@@ -211,7 +217,7 @@ $(".mapcontainer").mapael(
             value: "1435448",
             //href: "#",
             tooltip: {
-                content: "<h3>SINALOA</h3><ul><li><div><p>DR MORA 1336, LAS QUINTAS 80060, CULIACAN</p><p>TELÉFONO: 6675074361</p><p>CORREO: culiacan@marquenieve.com.mx</p></div></li></ul>"
+                content: "<h3>SINALOA</h3><div><p>DR MORA 1336, LAS QUINTAS 80060, CULIACAN</p><p>TELÉFONO: 6675074361</p><p>CORREO: culiacan@marquenieve.com.mx</p></div>"
                 
             }
         },

@@ -24,7 +24,7 @@
   </div>
 </section>
 <section id="carouselSection" >
-  <div id="carouselBox" class="carousel carousel-fade slide" data-ride="carousel">
+  <div id="carouselBox" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000" data-pause="false" >
     <ol class="carousel-indicators">
       <?php foreach ($imagen as $i => $img) {
           if ( $i == 0 ) {
@@ -53,3 +53,12 @@
   </div>
 </section>
 
+<script>
+$('.carousel').carousel({
+      interval: 1000,
+      pause: false
+    })
+    $('.carousel').carousel({
+      pause: "false"
+  });
+</script>

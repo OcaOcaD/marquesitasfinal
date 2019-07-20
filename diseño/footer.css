@@ -1,17 +1,7 @@
 #footer > button, input{
 
 }
-#footer{
-    height: fit-content;
-    display: block;
-    width: 100vw;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    background-color: #3b2314;
-    /*background-color: #260612;*/
-    /*color: #D6527D;*/	
-    color: #3b2314;
-}
+
 	.block{
 		width: 100%;
 		display: block;
