@@ -1,0 +1,94 @@
+/*********************/
+@media screen and (min-width: 770px){
+	#franquicias{
+		height: fit-content;
+		width: 100vw;
+		background-color: beige;
+		margin-right: 0px !important;
+    	margin-left: 0px !important;
+	}
+	.fran_banner{
+		font-family: 'Indie Flower', cursive;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		/*background: url("img/sucursales_b.jpg");*/
+		background-color: beige;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		display: flex;
+		align-items: center;
+	}
+		.banner-txt{
+		    color: #b67413;
+			text-shadow: 2px 2px #b5a89c;
+    		/* font-weight: 1000; */
+			font-weight: 1000;
+		}
+	.relleno{
+		height: 20vh;
+	}
+	.map-responsive{
+		height: 20vh;
+		width: 100%;
+	    overflow:hidden;
+	    padding-bottom:56.25%;
+	    position:relative;
+	}
+	.map-responsive iframe{
+		height: 100%;
+	    left:0;
+	    top:0;
+	    width:100%;
+	    position:absolute;
+	    border: none;
+	}
+}
+@media screen and (max-width: 769px){
+	#franquicias{
+ 		width: calc( 100vw + 15px);
+ 		height: fit-content;
+ 		background-color: beige;
+ 		/*margin-right: 0px !important;*/
+    	/*margin-left: 0px !important;*/
+
+	}
+	.fran_banner{
+		background-color: beige;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		/*background: url("img/sucursales_b.jpg");*/
+		width: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		display: flex;
+		align-items: center;
+	}
+		.banner-txt{
+		    color: #b67413;
+			text-shadow: 2px 2px #b5a89c;
+    		/* font-weight: 1000; */
+			font-weight: 1000;
+		}
+	.relleno{
+		display: none;
+		width: 0px;
+		height: 78vh;
+	}
+	.map-responsive{
+		width: 100vw;
+		height: 400px;
+	    overflow: hidden;
+	    padding-bottom: 56.25%;
+	    position:relative;
+	}
+	.map-responsive iframe{
+	    left:0;
+	    top:0;
+	    width:100% !important;
+	    position:absolute;
+	}
+	#map{
+		width: 100% !important;
+	}
+}
+/******************************************/

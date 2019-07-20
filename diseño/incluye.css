@@ -1,0 +1,17 @@
+#incluye-box{
+	height: auto;
+	padding-bottom: 10px;
+	background-color: #b5b1b0;
+
+}
+.flex-box{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+	.flex-box p{
+	}
+	.flex-item i{
+		font-size: 10px;
+	}

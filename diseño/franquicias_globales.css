@@ -1,0 +1,103 @@
+html, body{
+	overflow-x: hidden !important;
+}
+#h1{
+}
+
+.complete{
+	height: 100vh;
+	width: 100vw;
+}
+.completeh{
+	height: 100vh;
+}
+.center_middle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	.f-title{
+		color: #3c2213;  /*café oscuro*/
+		font-weight: 1000;
+		padding-top: 30px;
+	}
+.fill{
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+.fillh{
+	height: 100%;
+}
+.fillw{
+	width: 100%;
+}
+.c_block{
+	display: block;
+	width: 100%;
+}
+.pad-center{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.pad-center-2x{
+	padding-left: 20%;
+	padding-right: 20%;
+}
+@media screen and (max-width: 769px){
+	.complete{
+		height: fit-content;
+		width: 100vw;
+	}
+	.completeh{
+		height: 100vh;
+	}
+	.completew{
+		width: 100vw;
+	}
+	.center_middle{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.fill{
+		width: 100%;
+		height: 100%;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+	.fillh{
+	}
+	.fillw{
+		width: 100%;
+	}
+	.c_block{
+		display: block;
+		width: 100%;
+	}
+	.pad-center{
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
+	}
+	.pad-center-2x{
+		padding-top: 10%;
+		padding-left: 20%;
+		padding-right: 20%;
+		padding-bottom: 10%;
+
+	}
+}

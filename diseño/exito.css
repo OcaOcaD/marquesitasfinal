@@ -1,0 +1,70 @@
+li{
+	color: black;
+}
+#exito-box{
+	min-height: 100vh;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #b5b1b0;
+}
+#disponible{
+	max-width: 100%;
+	height: auto;
+}
+#negocio{
+	min-height: 200vh;
+	background: url(img/tradicion.jpg);
+	background-size: 100vw auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+#negocio-box{
+	height: 100%;
+}
+	#negocio-txt-box{
+		width: 100vw;
+		height: 500px;
+	}
+	#mn-img{
+		width: 100%;
+		 height: auto;
+	}
+#mejornegocio-img{
+	display: none;
+}
+@media screen and (max-width: 769px){
+	#exito-box{
+		min-height: 100vh;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: #b5b1b0;
+	}
+	#disponible{
+		max-width: 100%;
+		height: auto;
+	}
+	#negocio{
+		min-height: 50vh;
+    width: 100vw;
+    background: url(img/tradicion.jpg);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom;
+	}
+	#negocio-box{
+		height: 100%;
+	}
+		#negocio-txt-box{
+			width: 100vw;
+			height: 500px;
+		}
+		#mn-img{
+			width: 100%;
+			 height: auto;
+		}
+	#mejornegocio-img{
+		display: none;
+	}
+}

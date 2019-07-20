@@ -1,0 +1,273 @@
+@media screen and (min-width: 770px){
+	.innermainmenu {	
+		line-height: 1.5em;
+		margin: 0 auto;
+		width: 100vw;
+		height: 50px;
+		position: absolute;
+		z-index: 1000;
+	}
+	.innermainmenu ul{
+		width: 100%;
+		height: 75px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		padding-left: 0;
+	};
+	#ul_container_shadow{
+		position: relative;
+		top: 0;
+		left: 0;
+		height: 75px;
+		width: 1000px;
+		background-color: white;
+	}
+	li{
+		margin: 0;
+		display: inline-block;
+		color: #b67413;
+	}
+	
+	#li1{
+		order: 1;
+		padding-left: 30px;
+		padding-right: 30px;
+		color: #b67413;
+
+	}
+	#li2{
+		order: 2;
+		padding-left: 30px;
+		padding-right: 150px;
+		color: #b67413;
+
+	}
+	#liC{
+		order: 3;
+		position: absolute;
+		width: 250px;
+		margin-top:25px;
+		z-index: 10000;
+	}
+		.logo-btn{
+			display: flex;
+			text-decoration: none;
+			background: none;
+			border: none;
+			width: 100%;
+			height: 100px;
+			border: none;		
+		}
+		#liC button img{
+			width: 100%;
+		}
+	#li3{
+		order: 4;
+		padding-left: 150px;
+		padding-right: 30px;
+		color: #3c2213;	/*Claro*/
+
+	}
+	#li4{
+		order: 5;
+		padding-left: 30px;
+		padding-right: 30px;
+		color: #b67413;	/*Clar*/
+	
+	}
+	.innermainmenu ul li button{ 
+		font-size: 22px;
+	    text-decoration: none;
+	    color: #b67413 !important;
+	    text-shadow: 1px 1px #b5a89c;
+	}
+	.innermainmenu ul li button:hover{
+		text-decoration: none;
+		color: #b67413;
+	};
+
+	/***********************************/
+	#dspi{
+		width: 100%;
+	}
+	#navbar_inicio_nav{
+		height: 50px!important;
+	}
+	#navbar_inicio{
+		position: relative;
+		z-index: 900;
+	}
+	/***********carousel**********/
+	#carousel_inicio{
+		/*transform: translate(0%,-50px) !important;*/
+	}
+	.carousel-item{
+		height: 80vh !important;
+		display: flex;
+		align-items: center;
+		background-color: black;
+	}
+	.img-car-box{
+		height: 100%;
+		width: 100%;
+	}
+}
+/**************
+	SMALL CAROUSEL
+*********/
+@media screen and (max-width: 769px){
+	.innermainmenu {
+		height: 75px;
+		line-height: 1.5em;
+		margin: 0 auto;
+		width: 100vw;
+		position: absolute;
+		margin-top: 0;
+		display: block;
+		align-self: center;
+		background-color: white;
+		
+	}
+	#bars-icon{
+		position: absolute;
+		height: 50px;
+		width: 50px;
+	}
+		.fa-bars{
+		    height: 50px;
+		    width: 50px;
+		    align-self: center;
+		    vertical-align: middle;
+		    padding-top: 10px;
+		}
+	#small-logo{
+		position: absolute;
+		margin-left: 50%;
+		transform: translate(-60%,0);
+		float: right;
+		max-height: 50px;
+	}
+	.innermainmenu ul{
+		width: 100%;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		padding-left: 0;
+		background-color: beige;
+		color: #392413;
+	};
+	.innermainmenu ul li{
+		margin: 0;
+		height: 35px;
+		display: block;
+	}
+	.innermainmenu ul li:hover{
+		margin: 0;
+		height: 35px;
+		width: 100%;
+		display: block;
+		opacity: 1.5;
+		background-color: inherit;
+		transition-duration: .5s;
+		transform: translate(-20px,0px);
+	}
+	#li1{
+		margin: 0;
+		height: 50px;
+		line-height: 24px;
+		padding-left: 30px;
+
+	}
+	#li2{
+		margin: 0;
+		height: 50px;
+		line-height: 24px;
+		padding-left: 30px;
+
+	}
+	#liC{
+		display: none;
+	}
+		.logo-btn{
+			text-align: left;
+		    display: block;
+		    text-decoration: none;
+		    background: none;
+		    border: none;
+		    height: 100%;
+		    width: 100%;
+		    margin: 0 25;
+		}
+		li button{
+			background: none;
+			color: white;
+		}
+		#liC button img{
+			width: 100%;
+		}
+	#li3{
+		margin: 0;
+		height: 50px;
+		line-height: 24px;
+		padding-left: 30px;
+
+	}
+	#li4{
+		margin: 0;
+		margin-bottom: 5px;
+		height: 50px;
+		line-height: 24px;
+		padding-left: 30px;
+
+	}
+
+	.innermainmenu ul li a{ 
+		font-size: 24px;
+		text-decoration: none;
+		color: #b67413;
+	}
+	.innermainmenu ul li a:hover{
+		text-decoration: none;
+		color: #3c2213;
+	};
+
+	/***********************************/
+	#carousel_inicio{
+		/*transform: translate(0%,-50px) !important;*/
+	}
+	.carousel-item{
+		height: 40vh !important;
+		display: flex;
+		align-items: center;
+		background-color: black;
+	}
+	.img-car-box{
+		height: 100%;
+		width: 100%;
+		background-size: cover !important;
+	}
+}
+.carousel-indicators .active {
+    opacity: 1 !important;
+}
+.carousel-indicators li {
+    box-sizing: content-box !important;
+    -ms-flex: 0 1 auto !important;
+    flex: 0 1 auto !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 3px !important;
+    margin-left: 3px !important;
+    text-indent: -999px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    background-color: #2d1d1d !important;
+    background-clip: padding-box !important;
+    border-top: 10px solid transparent !important;
+    border-bottom: 10px solid transparent !important;
+    opacity: .5 !important;
+    transition: opacity .6s ease !important;
+}

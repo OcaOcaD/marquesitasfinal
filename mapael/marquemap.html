@@ -1,0 +1,377 @@
+
+<div class="todo">
+    <div class="states__info">        
+        <div class="state">
+                <h1>COAHUILA</h1>
+                <ul>
+                    <li>
+                        <p>
+                            TORREON
+                        </p>
+                        <p><i class="fas fa-map-marked-alt"></i>
+                            BLVD. INDEPENDENCIA #1754 COL. NAVARRO, 27100 
+                        </p>
+                        <p>
+                            TELEFONO: 8712367392 - CORREO: torreón@marquenieve.com.mx                                
+                        </p>
+                    </li>
+                </ul>
+        </div>
+        <div class="state">
+                <h1>HIDALGO</h1>
+                <ul>
+                    <li>
+                        <p>
+                            PACHUCA
+                        </p>
+                        <p><i class="fas fa-map-marked-alt"></i>
+                            BLVD. FELIPE ANGELES, COL. VENTA PRIETA, 42080 PACHUCA DE SOTO, HIDALGO, MÉXICO.
+                        </p>
+                        <p>
+                                TELEFONO 7717749916 - CORREO: pachuca@marquenieve.com.mx                                
+                        </p>
+                    </li>
+                </ul>
+        </div>
+        <div class="state">
+            <h1>JALISCO</h1>
+            <ul>
+                <li>
+                    <p><i class="fas fa-map-marked-alt"></i>
+                        AV. GUADALUPE 6370-D 45030 ZAPOPAN, JALISCO
+                    </p> 
+                </li>
+                <li>
+                    <p>
+                        GIGANTERA: MARTES A VIERNES 3:30 A 8:00 PM
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        SAN NICOLAS DE BARI: TODOS LOS LUNES DE 4:00 A 11:00 PM
+                    </p>
+                </li>
+                <li>
+                    <p><i class="fas fa-map-marked-alt"></i>
+                        ESTADIO AKRON: TODOS LOS PARTIDOS DE CHIVAS COMO LOCAL
+                    </p>
+                </li>
+                <li>
+                    <p><i class="fas fa-map-marked-alt"></i>
+                        ESTADIO CHARROS: DE OCTUBRE A ENERO
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        PLAZA DE TOROS: CORRIDAS
+                    </p>
+                    <p>
+                        TELEFONO: 3333992842 - CORREO: ventas@marquenieve.com.mx
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="state">
+            <h1>SINALOA</h1>
+            <ul>
+                <li>
+                    <p>CULIACAN</p>
+                    <p><i class="fas fa-map-marked-alt"></i> DR MORA 1336, LAS QUINTAS 80060, CULIACAN, SINALOA</p>
+                    <p>TELEFONO 6675074361 - CORREO culiacan@marquenieve.com.mx</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="states__info">    
+        <div class="state">
+            <h1>GUANAJUATO</h1>
+            <ul>
+                <li>
+                    <p>LEON</p>
+                    <p><i class="fas fa-map-marked-alt"></i> BLVD. CLOUTHIER 304, LEON GTO </p>
+                    <p>TELEFONO 4775773122 - CORREO león@marquenieve.com.mx</p>
+                </li>
+            </ul>
+        </div>
+        <div class="state">
+            <h1>VERACRUZ</h1>
+            <ul>
+                <li>
+                    <p>VERACRUZ</p>
+                    <p><i class="fas fa-map-marked-alt"></i> Estadio Luis Pirata Fuentes</p>
+                    <p>TELEFONO 2299335647</p>
+                </li>
+            </ul>
+        </div>
+        <div class="state">
+            <h1>ESTADO DE MÉXICO</h1>
+            <ul>
+                <li>
+                    <p>TOLUCA</p>
+                    <p><i class="fas fa-map-marked-alt"></i> Estadio Nemesio Diez</p>
+                    <p>TELEFONO 7221585981 - CORREO león@marquenieve.com.mx</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mapcontainer">
+        <div class="map">
+            <span>Alternative content for the map</span>
+        </div>
+        <div class="areaLegend"></div>
+        <div class="plotLegend"></div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mapael/2.1.0/js/jquery.mapael.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://rawgit.com/neveldo/mapael-maps/master/mexico/mexico.js" charset="utf-8"></script>
+<script type="text/javascript">
+$(".mapcontainer").mapael(
+{
+    "map": {
+        "name" : "mexico",
+        "zoom": {
+            "enabled": true,
+            "maxLevel": 15
+        },
+        defaultPlot:{
+            size: 20,
+            eventHandlers: {
+                click: function (e, id, mapElem, textElem, elemOptions) {
+                    if (typeof elemOptions.link != 'undefined') {
+                        window.open( elemOptions.link );
+                    }
+                }
+            }
+        },
+        defaultArea:{
+            attrs:{
+                fill: "#3b2314"
+            },
+            attrsHover: {
+                fill: "#6f4d1f"
+            }
+        }
+    },
+    "areas":{
+        "jalisco":{
+            attrs: {
+                fill: "beige"
+            },
+            attrsHover: {
+                fill: "#6f4d1f"
+            },
+            value: "1435448",
+            //href: "#",
+            
+            tooltip: {
+                content: "<h3>JALISCO</h3><ul>\
+                    <li><div><p>AV. GUADALUPE 6370-D 45030 ZAPOPAN, JALISCO</p><p>TELÉFONO: --- </p>  <p>CORREO: ---</p></div></li>\
+                    <li><div><p>ESTADIO CHARROS: DE OCTUBRE A ENERO</p><p>TELÉFONO: </p><p>CORREO: </p></div></li>\
+                    <li><div><p>ESTADIO AKRON: TODOS LOS PARTIDOS DE CHIVAS COMO LOCAL</p><p>TELÉFONO: --- </p><p>CORREO: ---</p></div></li>\
+                    <li><div><p>PLAZA DE TOROS: CORRIDAS</p><p>TELÉFONO: 3333992842</p><p>CORREO: ventas@marquenieve.com.mx</p></div></li>\
+                </ul>"
+            }
+        },
+        "coahuila":{
+            attrs: {
+                fill: "beige"
+            },
+            attrsHover: {
+                fill: "#6f4d1f"
+            },
+            value: "1435448",
+            //href: "#",
+            tooltip: {
+                content: "<h3>Torreón Coahuila</h3>"
+            }
+        },
+        "hidalgo":{
+            attrs: {
+                fill: "beige"
+            },
+            attrsHover: {
+                fill: "#6f4d1f"
+            },
+            value: "1435448",
+            //href: "#",
+            tooltip: {
+                content: "<h3>Pachuca, Hidalgo</h3>"
+            }
+        },
+        "sinaloa":{
+            attrs: {
+                fill: "beige"
+            },
+            attrsHover: {
+                fill: "#6f4d1f"
+            },
+            value: "1435448",
+            //href: "#",
+            tooltip: {
+                content: "<h3>SINALOA</h3><ul><li><div><p>DR MORA 1336, LAS QUINTAS 80060, CULIACAN</p><p>TELÉFONO: 6675074361</p><p>CORREO: culiacan@marquenieve.com.mx</p></div></li></ul>"
+                
+            }
+        },
+        "veracruz":{
+            attrs: {
+                fill: "beige"
+            },
+            attrsHover: {
+                fill: "#6f4d1f"
+            },
+            value: "1435448",
+            //href: "#",
+            tooltip: {
+                content: "<h3>VERACRUZ</h3><ul><li><div><p>Estadio Luis Pirata Fuentes</p><p>TELÉFONO: 2299335647</p><p>CORREO: ---- </p></div></li></ul>"
+                
+            }
+        },
+        "guanajuato":{
+            attrs: {
+                fill: "beige"
+            },
+            attrsHover: {
+                fill: "#6f4d1f"
+            },
+            value: "1435448",
+            //href: "#",
+            tooltip: {
+                content: "<h3>GUAJAJUATO</h3><ul><li><div><p>BLVD. CLOUTHIER 304, LEON GTO</p><p>TELÉFONO: 6675074361</p><p>CORREO: león@marquenieve.com.mx</p></div></li></ul>"
+                
+            }
+        },
+        "estado de mexico":{
+            attrs: {
+                fill: "beige"
+            },
+            attrsHover: {
+                fill: "#6f4d1f"
+            },
+            value: "1435448",
+            //href: "#",
+            tooltip: {
+                content: "<h3>EDO. MÉXICO</h3><ul><li><div><p>Estadio Nemesio Díez, Toluca</p><p>TELÉFONO: 7221585981</p><p>CORREO: león@marquenieve.com.mx</p></div></li></ul>"
+                
+            }
+        }
+    },
+    "legend":{
+        "plot":{
+            title: "NUESTRAS SUCURSALES EN MÉXICO",
+                slices: [{
+                    size: 20,
+                    attrs: {
+                        fill: "beige",
+                        stroke: "#3b2313",
+                        "stroke-width": 1
+                    },
+                    label: "Sucursales marquenieve",
+                    sliceValue: "bigOne"
+                },{
+                    size: 20,
+                    attrs: {
+                        fill: "#3b2313",
+                        stroke: "beige",
+                        "stroke-width": 1
+                    },
+                    label: "Sucursales marquenieve",
+                    sliceValue: "normalOne"
+                },{
+                    size: 10,
+                    attrs: {
+                        fill: "beige",
+                        stroke: "#3b2313",
+                        "stroke-width": 0.5
+                    },
+                    label: "Sucursales marquenieve",
+                    sliceValue: "smallOne"
+                }]
+        }
+    },
+    "plots":{
+        'Estadio Charros de Jalisco': {
+            "latitude": 20.727766,
+            "longitude": -103.381524,
+            "link": "https://goo.gl/maps/HoTP8mk9fojamoEF6",
+            tooltip: {content: "Estadio Charros de Jalisco"},
+            value: "bigOne"
+        },
+        'Estadio Akron': {
+            "latitude": 20.681671,
+            "longitude": -103.462496,
+            "link": "https://goo.gl/maps/HoTP8mk9fojamoEF6",
+            tooltip: {content: "<div><img src='hola.jpg' alt='<h1>Estadio Akron</h1><p>Todos los partidos cómo local img</p>' ></div>"},
+            value: "normalOne"
+        },
+        'AV. GUADALUPE': {
+            "latitude": 20.659349,
+            "longitude": -103.442285,
+            "link": "https://goo.gl/maps/UsqgjWEK5huSs7Jr5",
+            tooltip: {content: "AV. GUADALUPE 6370-D 45030 ZAPOPAN"},
+            value: "smallOne"
+        },
+        'Plaza de Toros': {
+            "latitude": 20.702042, 
+            "longitude": -103.325309,
+            "link": "https://goo.gl/maps/8g1sbwmAfr9y7RmU8",
+            tooltip: {content: "Plaza de Toros, Corridas"},
+            value: "smallOne"
+        },
+        'Torreón': {
+            plotsOn: "coahuila",
+            "latitude": 25.563239,
+            "longitude": -103.429868,
+            link: "https://goo.gl/maps/uKkvvWa86gMtcY1y8",
+            tooltip: {content: "Plaza de Toros, Corridas"},
+            value: "normalOne"
+        },
+        'Pachuca de Soto': {
+            plotsOn: "hidalgo",
+            "latitude": 20.086453,
+            "longitude":  -98.771024,
+            "link": "https://goo.gl/maps/Hu69kttaU6qC59oS7",
+            tooltip: {content: "<ul><li>BLVD. FELIPE ANGELES, COL. VENTA PRIETA, 42080</li><li>TELÉFONO: 7717749916</li><li>CORREO: pachuca@marquenieve.com.mx</li></ul>"},
+            value: "normalOne",
+            onclick:  "()=>{ window.alert('hidalgo') }"
+        },
+        'Culiacan': {
+            plotsOn: "sinaloa",
+            "latitude": 24.814061, 
+            "longitude": -107.375019,
+            "link": "https://goo.gl/maps/19M3XJrkgoK19YXUA",
+            tooltip: {content: "<ul><li>DR MORA 1336, LAS QUINTAS 80060, CULIACAN, SINALOA</li><li>TELÉFONO: 6675074361</li><li>CORREO: culiacan@marquenieve.com.mx</li></ul>"},
+            value: "normalOne"
+        },
+        'León': {
+            plotsOn: "guanajuato",
+            "latitude": 21.163218,
+            "longitude": -101.691646 ,
+            "link": "https://goo.gl/maps/d1XYaW1naqQEURQbA",
+            tooltip: {content: "<ul><li>LEON, BLVD. CLOUTHIER 304, LEON GTO.</li><li>TELÉFONO: 4775773122</li><li>CORREO: león@marquenieve.com.mx</li></ul>"},
+            value: "normalOne"
+        },
+        'Estadio Luis Pirata Fuentes': {
+            "latitude": 19.164263,
+            "longitude": -96.125017,
+            "link": "https://goo.gl/maps/d1XYaW1naqQEURQbA",
+            tooltip: {content: "<ul><li>Estadio Luis Pirata Fuentes</li><li>TELÉFONO: 2299335647</li></ul>"},
+            value: "normalOne"
+        },
+        'Estadio Nemesio Díez': {
+            plotsOn: "estado de mexico",
+            "latitude": 19.287324,
+            "longitude": -99.666683,
+            "link": "https://goo.gl/maps/d1XYaW1naqQEURQbA",
+            tooltip: {content: "<ul><liEstadio Nemesio Díez</li><li>TELÉFONO: 7221585981</li></ul>"},
+            value: "normalOne"
+        }
+    }
+}
+)
+</script>
+<script>
+    $(".plotLegend").hide();
+</script>

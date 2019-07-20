@@ -1,0 +1,642 @@
+| /*font-family: 'Hind', sans-serif; */
+.scrollable::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.scrollable::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: beige;
+  outline: 1px solid slategrey;
+}
+ .glowG{
+  /*text-shadow: 1px 1px #dca327;*/
+  text-shadow: 1px 1px beige;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+html{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Anton', sans-serif;
+	font-family: 'Lobster', cursive;
+	font-family: 'Permanent Marker', cursive;
+	font-family: 'Roboto', sans-serif;*/
+}
+@media only screen and (min-width: 770px){
+    /* ... parallax styles ... */
+    .parallax {
+	  scroll-behavior: smooth;
+	}
+
+	  /* demo styles
+	  --------------------------------------------- */
+
+	  body {
+	    font: 120% / 1.5 Arial;
+	    scroll-behavior: smooth;
+
+	  }
+
+	  * {
+	    box-sizing: border-box;
+	    margin: 0;
+	    padding: 0;
+	  }
+
+	  h1, p {
+	  }
+
+	  body > svg {
+	    display: none;
+	  }
+
+
+	  /* demo navF bar
+	  --------------------------------------------- */
+  	#navF{
+  		position: absolute;
+		width: 50px;
+		height: 100vh;
+		padding-left: 0;
+		margin-left: 0;
+		display: flex;
+	    align-items: center;
+	}
+	#navF nav{
+		position: fixed;
+		height: auto;
+		width: 50px;
+	    /*ransform: translate(0%,-50%);*/
+	    text-align: left;
+	    z-index: 1000;
+	    margin-left: 0px;
+	    display: flex;
+	    align-items: center;
+	}
+	  .navF {
+		text-align: left;
+	    display: block !important;
+	    margin-left: 0px;
+	    padding-left: 0em;
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    z-index: 100;
+
+	  }
+	  .navF li {
+	  	display: flex;
+	  	width: 100%;
+	  	margin-left: 0px;
+	    padding-left: 0em;
+	    list-style: none;
+	    background: rgba(0,0,0,.6);
+	  	border-top-right-radius: 50%;
+	    border-bottom-right-radius: 50%;
+	    transition: 0.4s;
+	  }
+
+	  .navF li:hover {
+	  		cursor: pointer;
+		  	width: 160px;
+		  	border-top-right-radius: 25px;
+	    	border-bottom-right-radius: 25px;
+		    list-style: none;
+		  }
+	  .navF p {
+	  	    width: auto;
+            display: inline-block;
+            padding-bottom: 0.5em;
+            padding-top: 0.5em;
+            padding-left: .5em;
+            padding-right: .4px;
+            color: #fff;
+            margin: 0;
+	  }
+	  #cat_nmb{
+	      width:1.5em !important;
+	      margin:0px !important;
+	  }
+	  li .cat_txt{
+	  	transition: 0.4s;
+	  	width: 0px;
+	  	display: none;
+	  	color: beige;
+	  	text-align: left;
+	  }
+	  li:hover .cat_txt{
+	  	width: 160px;
+	  	display: inline-block;
+	    text-decoration: none;
+	    color: whitesmoke;
+	    text-shadow: 0px 0px 2px beige
+	  }
+	  .navF p:hover{
+	    text-decoration: none;
+	    color: whitesmoke;
+	    text-shadow: 0px 0px 2px beige
+	  }
+	  #solicitaFranquicia{
+	      width: 240px;
+	      height: auto;
+	  }
+	  #solicitaFranquicia:hover{
+	      transform: translate(-15px, 0px);
+	      width: 300px;
+	      height: auto;
+	  }
+	  #solicitaFranquicia button{
+	      background:none;
+	      border:none;
+	  }
+	  
+        .hide {
+          visibility: hidden;
+        }
+        
+        .button {
+            
+          background: rgba(0,0,0,.6);
+          text-align: center;
+          cursor: pointer;
+          z-index: 1;
+          border-top-right-radius: 25px;
+	      border-bottom-right-radius: 25px;
+          transition: background 0.5s
+        }
+        
+        .button:hover {
+          background: #3b2314;
+        }
+        
+        
+        .animation {
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -webkit-animation-duration: 1s;
+          -moz-animation-duration: 1s;
+          -webkit-animation-iteration-count: 1;
+          -moz-animation-iteration-count: 1;
+        }
+
+
+	  /* slide layout
+	  --------------------------------------------- */
+	#pngFront{
+		display: block;
+		height: 60vh;
+		width: auto;
+		margin-left: 50vw;
+		transform: translate(-48%,20%);
+		z-index: 1;
+
+	}
+	  .slide {
+	    position: relative;
+	    display: block;
+	  }
+	  .slide__content {
+	  	display: block;
+	    width: 100vw;
+	    height: 100%;
+	    margin: 0;
+	  }
+	  	#slide_bg1{
+	  		display: block;
+	  		position: absolute;
+	  		width: 100%;
+	  		height: 100%;
+	  	}
+	  	#slide-2{
+	  		height: 180vh;
+	  		padding-top: 115px;
+	  	}
+	  	#tituloBox{
+	  		position: absolute;
+	  		width: 100%;
+	  		height: auto;
+	  		display: flex;
+	  		justify-content: center;
+	  		align-items: center;
+	  	}
+	  .slide__text, .slide__image {
+		background: #3b2314;
+		height: fit-content;
+		color: beige;
+		
+	  }
+	  .slide__image svg {
+	    display: block;
+	    width: 100%;
+	    max-width: 560px;
+	    margin: auto;
+	  }
+	  .slide__bg {
+	  	display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    z-index: -1;
+	    width: 100vw;
+	  }
+	  /* slide settings */
+	  /* misc
+	  --------------------------------------------- */
+
+	  .demo__info {
+	    position: fixed;
+	    width: 100%;
+	    bottom: 0;
+	    font-size: 80%;
+	    text-align: center;
+	    background: rgba(255,255,255,.5);
+	    padding: 0.5em;
+	    z-index: 100;
+	  }
+	  #slide-1-title{
+	  		transform: translateZ(60px) scale(.8);
+			font-size: 150px;
+			font-family: 'Roboto', sans-serif;
+			color: #3b2314;
+			font-weight: 1000;
+			text-align: center;
+			z-index: 0;
+			padding-top: 1.2em;
+			padding-bottom: 1.5em;
+			color: #3b2314;
+
+	  }
+	  #slide-2-title{
+	    padding: .2rem;
+	    max-height: 100%;
+	    width: 100%;
+	  	text-align: center;
+	  	font-family: 'Permanent Marker', cursive;
+	  	color: beige;
+	  	text-shadow: 0px 0px 2px whitesmoke;
+	  }
+
+	  /****/
+	  #slide-3{
+	  	height: auto;
+	  	background-color: #3c2213;
+	  }
+	  #sContent3{
+	  	height: 100%;
+	  	display: flex;
+	  }
+	  .slide__left{
+	  	order: 1;
+	  	z-index: 1;
+	  	width: 30vw;
+	  	height: 100%;
+	  }
+	  	.slide__left img{
+	  		z-index: 1;
+	  		max-height: 100vh;
+	  		max-width: auto;
+	  	}
+	  .slide__right{
+	  	display: flex;
+	  	flex-wrap: wrap;
+	  	align-items: center;
+	  	z-index: 2;
+	  	order: 2;
+	  	width: 70vw;
+	  	height: 100%;
+	  }
+	  	.slide__right h1,h2,h3{
+	  		text-align: center;
+	  	}
+			.slide__right h1{
+				font-family: 'Permanent Marker', cursive !important;
+				font-size: 200%;
+				color: beige;
+				padding-bottom:2em;
+			}
+			.slide__right h2{
+				font-size: 160%;
+				color: whitesmoke;
+				padding-bottom:1.5em;
+			}
+			.slide__right h3{
+				font-size: 100%;
+				color: white;
+				padding-bottom:1em;
+			}
+		.flex{
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		.block{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		#franquiciasimg{
+			display: none;
+		}
+		#equipo{
+			padding-top: 5%;
+			padding-bottom: 10%;
+			position: relative;
+			display: block;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100vw;
+			font-family: 'Roboto Condensed', sans-serif !important;
+		}
+			#equipo .slide__bg{
+				position: absolute;
+				background: url( ../diseño/img/disponibles.jpg );
+				background-size: 100vw auto; 
+				height: 100%;
+				width: 100%;
+				opacity: .3;
+			}
+			#equipo .slide__text {
+				width: 100vw;
+				display: block;
+				font-family: 'Permanent Marker', cursive !important;
+				height: fit-content;
+				font-size: 25px !important;
+				padding: 1em;
+				display: block;
+				text-align: center;
+			}
+				.slide__text h1{
+					width: 100vw;
+					display: block;
+					font-family: 'Permanent Marker', cursive !important;
+					height: fit-content;
+					font-size: 200%;
+					padding: 1em;
+					display: block;
+					text-align: center;
+				}
+			.normal__text{
+				font-family: 'Roboto Condensed', sans-serif !important;				padding: 1em;
+				color: #3b2314;
+				display: block;
+				text-align: center;
+			}
+				.normal__text h2{
+					width: 100%;
+					padding: 0;
+					font-weight: 800;
+					font-family: 'Roboto Condensed', sans-serif;
+					font-size: 30px;
+				}
+		#slide-5{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+		}
+			#slide-5 .slide__bg {
+				height: 100%;
+				display: block;
+				float: left;
+				background: url( 'img/invierte_bg.jpg' );
+				background-repeat:no-repeat;
+				background-attachement:scroll;
+			    /*background-image: radial-gradient(circle at 50% 10% , #e8c295 0%, #3c2213 50%, #3c2213 95%);*/
+			    background-size: 100vw 100vh;
+			    z-index: 1;
+			 }
+			#slide-5  .slide__content{
+				display: block;
+				float: right;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 100;
+				color: white;
+			}
+		     #slide-5 .slide__content{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+            }
+            #inv_comp_block{
+                display: block;
+                width:80%;
+            }
+            #inv_title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 130%;
+                padding-bottom:1.5em;
+            }
+            #inv_txt{
+                display:block;
+            }
+                .inv_cols{
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    font-size:100%;
+                    padding-bottom:1.5em;
+                }
+                    .col_block{
+                        order:1;
+                        display:block;
+                        width :30%;
+                    }
+                    .col_block_types{
+                        order:2;
+                        display:block;
+                        width :70%;
+                    }
+                        .inv_bot_row{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                        }
+                            .inv_pfijo{
+                                order:1;
+                                display:flex;
+                                align-items: center;
+                                justify-content: center;
+                                width:50%;
+                            }
+                            .inv_pmovil{
+                                order:2;
+                                display:flex;
+                                align-items: center;
+                                justify-content: center;
+                                width:50%;
+                            }
+                                .inv_left_img{
+                                    order:1;
+                                    width: 30%;
+                                }
+                                    .inv_left_img img{
+                                        width: auto;
+                                        height: auto;
+                                    }
+                                .inv_right_side{
+                                    order:2;
+                                    display:block;
+                                    width:70%;
+                                    text-align:left;
+                                }
+                                .inv_right_side h3{
+                                    text-align:left;
+                                }
+				.slide__title{
+					font-family: 'Permanent Marker', sans-serif;
+					/*padding-top: calc(1.5rem + 100px );*/
+					/*height: 100%;*/
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+				}
+			#solicitud{
+				font-family: 'Permanent Marker', sans-serif !important;
+			}
+			#solicitud:hover{
+				font-family: 'Permanent Marker', sans-serif;
+				cursor: pointer;
+				color: beige;
+				text-shadow: 0px 0px 2px whitesmoke;
+			}
+					
+		#slide__img{
+			width: auto;
+			height: 80vh;
+			background: url(../diseño/img/importa.png);
+		    background-size: 70vw calc( 100vh - 150px );
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    z-index: 100;
+		}
+	  /****/
+
+
+	  /* slide backgrounds */
+
+	  #slide-1 .slide__bg {
+	  	height: 100vh;
+	    background: url(../diseño/img/franja.png);
+	    background-size: 90vw auto;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    z-index: 1;
+	  }  
+	  #slide-2 .slide__bg {
+		height: 180vh;
+	    background: url(../diseño/img/bajaInversion.png);
+	    background-size: 100vw auto;
+	    background-position: top;
+	    background-repeat: no-repeat;
+	    z-index: 1;
+	  }
+	/* #slide-5 -slide__bg está arriba ^ */
+/**/
+	  #slide-6 .slide__bg {
+	    background-image: repeating-linear-gradient(
+	      45deg,
+	      rgb(133, 213, 230) 0px,
+	      rgb(133, 213, 230) 30px,
+	      rgb(113, 193, 210) 30px,
+	      rgb(113, 193, 210) 60px
+	    );
+	  }
+
+	#slide-2 .slide__content{
+		display: block;			
+	}
+	  
+
+
+	  /* Large screen layout
+	  --------------------------------------------- */  
+	  
+	  @media screen and (min-width: 45em) {
+
+	    .slide__content {
+	      display: -webkit-flex;
+	      display: flex;
+	      align-items: center;
+	    }
+	    .slide__image, .slide__text {
+	      padding: 3%;
+	      -webkit-flex: 1;
+	      flex: 1;
+	    } 
+	    .slide:nth-child(2n) .slide__text {
+	      -webkit-order: 1;
+	      order: 1;
+	    }
+	    .navF {
+	      display: block;
+	    }
+
+	    /* parallax */
+
+	      html, body {
+	        overflow: hidden;
+	        height: 100%;
+	      }
+	      body {
+	        transform: translateZ(0px); /* Fix paint issues in Edge && Safari H/W acceleration */
+	      }
+	      .slides {
+	        position: absolute;
+	        width: 100%;
+	        height: 100%;
+	        overflow-x: hidden;
+	        overflow-y: auto;
+	        perspective: 300px;
+	        scroll-behavior: smooth;
+	      }
+	      .slide, .slide__content {
+	        transform-style: preserve-3d;
+	      }
+	      .slide__text {
+	        transform: translateZ(60px) scale(.8);
+	        /*transform-origin: 100% 50%;*/
+	      }
+	      .slide:nth-child(2n) .slide__image {
+	        transform: translateZ(100px) scale(.67);
+	        transform-origin: 100% 50%;
+	      }
+	      .slide:nth-child(2n) .slide__text {
+	        /*transform-origin: 0% 50%;*/
+	      }
+	      .slide:nth-child(2n) .slide__bg {
+	        /*transform: translateZ(59px) scale(.85);*/
+	      }
+
+	      .slide:first-child {
+	      	height: 90vh;
+	      }
+	      .slide:last-child {
+	        padding-bottom: 14%;
+	      }
+	      .slide:nth-child(2n) {
+	        z-index: 1; /* ensure slides overlay correctly */
+	      }
+	  }
+}

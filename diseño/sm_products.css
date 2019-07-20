@@ -1,0 +1,118 @@
+/***************Small*Products******/
+@media screen and (max-width: 769px){
+	#prod_menu{
+		padding-bottom: 15px;
+	}
+	.title_menu{
+		height: auto;
+		padding-top: 25px;
+		padding-bottom: : 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.seleccion_menu{
+		display: block;
+		justify-content: space-evenly;
+		height: auto;
+	}
+		.prod_type{
+			padding-left: 0;
+			padding-right: 0;
+			background-color: beige;	/*Clao*/
+			margin-top: 10px;
+			height: 150px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			border-radius: 10px;
+		}
+		.prod_type:hover{
+			cursor: pointer;
+			background-color: #3c2213;
+			color: white;
+		}
+			.prod_type h3{
+				order: 2;
+			}
+			.prod_type h5{
+				order: 2;
+			}
+			.prod_type img{
+				order: 1;
+				max-height: 150px;
+			}
+			.prod_type:hover >  h5{
+				transform: scale(1.2) translate(0, -15%);
+				text-shadow: 2px 2px black;
+			}
+			.prod_type h5{
+				position: absolute;
+				display: inline-block;
+				padding-top: 100px;
+				padding-bottom: 0;
+				z-index: 2;
+			}
+		.no_deco{
+			background: none;
+			border: none;
+			text-decoration: none;
+		}
+		#prod_list{
+			height: auto;
+			background-color: beige;
+		}
+		#controles_menu{
+			height: auto;
+			padding-top: 25px;
+			padding-bottom: : 25px;
+			display: flex;
+			width: 100%;
+			justify-content: right;
+			align-items: center;
+			margin-left: 0;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+			#titulo_menu{
+				order: 1;
+				position: relative;
+				width: 80%;
+				display: flex;
+				display: none;
+				justify-content: center;
+				padding-left: 35px;
+			}
+			#cerrar_menu{
+				order: 2;
+				position: relative;
+				margin-left: 80%;
+			}
+				#cerrar_menu button{
+					background: none;
+					border: none;
+					text-decoration: none;
+					color: red;
+				}
+		#menu_box{
+			height: 100%;
+			margin-right: 0px !important;
+    		margin-left: 0px !important;
+		}
+			.prod-box{
+				display: block;
+				align-items: center;
+				justify-content: center;
+				height: auto;
+				font-size: 18px;
+				text-shadow: 2px 2px white;
+			}
+			.prod-box img{
+				max-height: 70%;
+				max-width: 300px;
+			}
+			.prod-box p{
+			}
+}
+	

@@ -1,0 +1,553 @@
+@media only screen and (max-width: 769px){
+	 /* ... parallax styles ... */
+	.parallax {
+		scroll-behavior: smooth;
+	}
+  	@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+		  /* demo styles
+		  --------------------------------------------- */
+
+		  body {
+		    font: 120% / 1.5 Arial;
+		    scroll-behavior: smooth;
+
+		  }
+
+		  * {
+		    box-sizing: border-box;
+		    margin: 0;
+		    padding: 0;
+		  }
+
+		  h1, p {
+		  }
+
+		  body > svg {
+		    display: none;
+		  }
+
+
+		  /* demo navF bar
+		  --------------------------------------------- */
+		#navF nav{
+			position: fixed;
+			height: 100vh;
+		    margin-top: 50vw;
+		    margin-left: 0px;
+		    text-align: center;
+		    z-index: 1000;
+		    transform: translate(0%,-12%);
+		}
+		  .navF {
+		    width: 30px;
+		    height: 30px;
+		    display: block !important;
+		    
+
+		  }
+		  .navF li {
+		  	border-top-right-radius: 50%;
+		    border-bottom-right-radius: 50%;
+		    background: rgba(0,0,0,.6);
+		  	width: 100%;
+		    list-style: none;
+
+		  }
+		  .navF li:hover {
+		  	border-top-right-radius: 15px;
+		    border-bottom-right-radius: 15px;
+		    background: rgba(0,0,0,.6);
+		  	width: 180px;
+		    list-style: none;
+		    display: flex;
+		    align-items: center;
+		    justify-content: left
+
+		  }
+
+		  li p {
+		  	width: 100%;
+		    display: inline-block;
+		    line-height: 100%;
+		    color: beige;
+	        margin-top: 1rem !important;
+    		margin-bottom: 1rem !important;
+		  }
+		  li .cat_nmb{
+		  	width: 20%;
+		  }
+		  li .cat_txt{
+		  	width: 80%;
+		  	transition: 0.4s;
+		  	width: 0px;
+		  	display: none;
+		  	color: beige;
+		  }
+		  li:hover .cat_txt{
+		  	width: 180px;
+		  	display: inline-block;
+		    text-decoration: none;
+		    color: whitesmoke;
+		    text-shadow: 0px 0px 2px beige;
+		  }
+		  .navF p:hover{
+		    text-decoration: none;
+		    color: whitesmoke;
+		    text-shadow: 0px 0px 2px beige;
+		  }
+		  	  #solicitaFranquicia{
+        	      width: 50px;
+        	      height: 50px;
+        	      transition:1s;
+        	      padding-top:.5em;
+        	      padding-bottom:.5em;
+        	  }
+        	  #solicitaFranquicia:hover{
+        	      transform: translate(-5px, 0px);
+        	      height: 50px;
+        	      width: 280px;
+        	  }
+        	    .sol-txt{
+        	        display:none;
+        	        transition:0.5s;
+        	    }
+        	    .sol-p{
+        	        display:none;
+        	        transition:display .5s;
+        	        transition:width 2s;
+        	        width:0px;
+        	    }
+        	  #solicitaFranquicia:hover .sol-txt{
+        	      text-align:center;
+                    display: block;        	      
+        	  }
+        	  #solicitaFranquicia:active .sol-txt{
+        	      text-align:center;
+                    display: block;        	      
+        	  }
+        	  #solicitaFranquicia:hover .sol-p{
+        	      width:280px;
+        	      text-align:center;
+                    display: block;        	      
+        	  }
+        	  #solicitaFranquicia:active .sol-p{
+        	      width:280px;
+        	      text-align:center;
+                    display: block;        	      
+        	  }
+        	  #solicitaFranquicia button{
+        	      background:none;
+        	      border:none;
+        	      color: white;
+        	  }
+        	  
+                .hide {
+                  visibility: hidden;
+                }
+                
+                .button {
+                    
+                  background: rgba(0,0,0,.6);
+                  text-align: center;
+                  cursor: pointer;
+                  z-index: 1;
+                  border-top-right-radius: 25px;
+        	      border-bottom-right-radius: 25px;
+                  transition: background 0.5s
+                }
+                
+                .button:hover {
+                  background: #3b2314;
+                }
+                
+                
+                .animation {
+                  -webkit-animation-delay: 0s;
+                  -moz-animation-delay: 0s;
+                  -webkit-animation-duration: 1s;
+                  -moz-animation-duration: 1s;
+                  -webkit-animation-iteration-count: 1;
+                  -moz-animation-iteration-count: 1;
+                }
+
+
+		  /* slide layout
+		  --------------------------------------------- */
+		/*- Slide 1 -*/
+		#slide-1{
+			height: 30vh;
+			width: 100vw;
+			padding-top: .5em;
+		}
+		#slide-1 .slide__content{
+			height: 100%;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		#tituloBox{
+			position: relative;
+			height: 30%;
+			width: 100%;
+		}
+		#slide-1-title{
+	  		/*transform: translateZ(60px) scale(.8);*/
+			font-size: 350%;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 1000;
+			text-align: center;
+			color: #3b2314;
+			transform: translate(0%,-75%);
+	    }
+	    #slide-1 .slide__bg {
+	    	padding-top: 1em;
+	    	position: absolute;
+			height: 30vh;
+			width: 100%;
+			background: url(../diseño/img/franja.png);
+			background-size: 90vw auto;
+			background-position: center;
+			background-repeat: no-repeat;
+			z-index: 1;
+		}  
+		#pngFront{
+			padding-top: 1em;
+			position: absolute;
+			display: block;
+		    width: auto;
+		    height: 25vh;
+		    z-index: 1;
+		}
+		/*- Slide 2 -*/
+		#slide-2{
+			width: 100vw;
+		}
+		#slide-2 .slide__bg {
+			width: 100vw;
+			height: 50vh;
+		    background: url(../diseño/img/bajaInversion.png);
+		    background-size: 100vw auto;
+		    background-position: top;
+		    background-repeat: no-repeat;
+		    z-index: 1;
+		  }
+  		#slide-2 .slide__content{
+			display: block;			
+		}
+		#slide-2-title{
+			height: auto;
+			background-color: #3b2314;
+			font-size: 100%;
+			margin: 0 !important;
+			padding: 1.5em;
+			max-height: 100%;
+			width: 100%;
+			text-align: center;
+			font-family: 'Permanent Marker', cursive;
+			color: beige;
+			text-shadow: 0px 0px 2px whitesmoke;
+		}
+	  /*- Slide 3 -*/
+		#slide-3{
+		    background-color:#3b2314;
+		}
+		#sContent3{
+			height: 100%;
+			display: flex;
+		}
+		.slide__left{
+			order: 1;
+			z-index: 1;
+			width: 30vw;
+			height: 100%;
+		}
+			.slide__left img{
+				transform: translate(-15%,0%);
+				z-index: 1;
+				/*width: 100%;
+				max-height: 100vh;*/
+				height: 100vw;
+				width: auto;
+			}
+		.slide__right{
+			display: flex;
+            background: #3b2314;
+            z-index: 2;
+            order: 2;
+            width: 70vw;
+            height: 100vw;
+            align-items: center;
+        }
+			.slide__right h1,h2,h3{
+	  		text-align: center;
+	  	}
+			.slide__right h1{
+				font-family: 'Permanent Marker', cursive !important;
+				font-size: 100%;
+				color: beige;
+				padding-bottom:2em;
+			}
+			.slide__right h2{
+				font-size: 80%;
+				color: whitesmoke;
+				padding-bottom:1.5em;
+			}
+			.slide__right h3{
+				font-size: 65%;
+				color: white;
+				padding-bottom:1em;
+			}
+		.flex{
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+		    .flex img{
+		        max-width: 16vw;
+		        height: auto;
+		    }
+
+		.block{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		/*- Slide 3 o 5 -*/
+		#slide-5{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			background-color:black;
+		}
+			#slide-5 .slide__bg {
+				height: 100vh;
+				width: 100vw;
+				display: block;
+				float: left;
+				background: url( 'img/invierte_bg.jpg' );
+				background-repeat:no-repeat;
+				background-size:100vw auto;
+				background-position:bottom;
+			    z-index: 1;
+			 }
+			#slide-5  .slide__content{
+				display: block;
+				float: right;
+				position: absolute;
+				width: 100%;
+				height: 80vh;
+				z-index: 1;
+				padding-top:100px;
+			}
+			#slide-5 .slide__content{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+            }
+            #inv_comp_block{
+                display: block;
+                width:80%;
+            }
+            #inv_title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom:1.5em;
+            }
+                #inv_title h1{
+                    color: white;
+                    font-size: 110%;
+                }
+            #inv_txt{
+                display:block;
+            }
+                #inv_txt h2{
+                    font-size:90%;
+                    color:whitesmoke;
+                }
+                .inv_cols{
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    padding-bottom:1.5em;
+                }
+                    .col_block{
+                        order:1;
+                        display:block;
+                        width :30%;
+                    }
+                        .col_block h2{
+                            font-size:90%!important;
+                            color:whitesmoke;
+                        }
+                    .col_block_types{
+                        order:2;
+                        display:block;
+                        width :70%;
+                    }
+                        .inv_bot_row{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                        }
+                            .inv_pfijo{
+                                order:1;
+                                display:flex;
+                                align-items: center;
+                                justify-content: center;
+                                width:50%;
+                            }
+                            .inv_pmovil{
+                                order:2;
+                                display:flex;
+                                align-items: center;
+                                justify-content: center;
+                                width:50%;
+                                
+                            }
+                                .inv_left_img{
+                                    order:1;
+                                    width: 30%;
+                                    text-align:center;
+                                }
+                                    .inv_left_img img{
+                                        max-width: 8vw;
+                                        height: auto;
+                                    }
+                                .inv_right_side{
+                                    order:2;
+                                    display:block;
+                                    width:70%;
+                                    text-align:left;
+                                }
+                                .inv_right_side h3{
+                                    font-size:70%;
+                                    text-align:left;
+                                    color:whitesmoke;
+                                }
+				.slide__title{
+					color: beige;
+					font-family: 'Permanent Marker', sans-serif;
+					padding-top: 50px;
+					padding-bottom: 50px;
+					/*height: 100%;*/
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+				}
+			#solicitud{
+				font-size: 150%;
+				text-align: center;
+				font-family: 'Permanent Marker', sans-serif !important;
+			}
+			#solicitud:hover{
+				font-family: 'Permanent Marker', sans-serif;
+				cursor: pointer;
+				color: beige;
+				text-shadow: 0px 0px 2px whitesmoke;
+			}
+			#slide__img{
+				width: 100vw;
+				height: 56vh;
+				background: url(../diseño/img/importa.png);
+			    background-size: 100vw auto;
+			    background-position: top;
+			    background-repeat: no-repeat;
+			    z-index: 1;
+			}
+		/*- Slide Productos or 6 -*/
+		#slide-6{
+			height: auto;	
+		}
+		/*- Slide equipo -*/
+		#franquiciasimg{
+			display: flex;
+			display: none;
+			width: 100vw;
+			height: auto;
+			margin: 0;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+		}
+			#franquiciasimg img{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: auto;
+			}
+		#equipo{
+			position: relative;
+			display: block;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+			width: 100vw;
+			font-family: 'Roboto Condensed', sans-serif !important;
+		}
+			#equipo .slide__bg{
+				position: absolute;
+				background: url( ../diseño/img/disponibles.jpg );
+				background-repeat: no-repeat;
+				background-position: top;
+				background-size: 100vw auto; 
+				height: 100%;
+				width: 100%;
+				opacity: .35;
+				z-index: -1;
+				margin-top: 100px;
+			}
+			#equipo .slide__text {
+				height: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 1;
+				width: 100%;
+				font-size: 150% !important;
+				text-align: center;
+			    /*background-image: radial-gradient(circle at 50% 35% , #e8c295 0%, #3c2213 50%, #3c2213 95%);*/
+				background-color: #3b2314;
+
+			}
+				.slide__text h1{
+					height: auto;
+					width: 100%;
+					display: block;
+					font-family: 'Permanent Marker', cursive !important;
+					font-size: 95% !important;
+					color: beige;
+				}
+			.normal__text{
+			    padding-left: 1em;
+				padding-right: 1em;
+				font-family: 'Roboto Condensed', sans-serif !important;
+				padding-bottom: 0.2em;
+				padding-top: 0.2em;
+				font-size: 80%;
+				color: #3b2314;
+				display: block;
+				text-align: center;
+			}
+				.normal__text h2{
+					width: 100%;
+					padding: 0;
+					font-weight: 800;
+					font-family: 'Roboto Condensed', sans-serif;
+					font-size: 80%;
+				}
+				.normal__text p{
+				    font-size: 75%;
+				}
+				.normal__text small{
+				    font-size:70%;
+				}
+
+	}
+}
+ 

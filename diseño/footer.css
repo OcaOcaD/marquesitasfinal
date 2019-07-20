@@ -1,0 +1,148 @@
+#footer > button, input{
+
+}
+#footer{
+    height: fit-content;
+    display: block;
+    width: 100vw;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    background-color: #3b2314;
+    /*background-color: #260612;*/
+    /*color: #D6527D;*/	
+    color: #3b2314;
+}
+	.block{
+		width: 100%;
+		display: block;
+		margin: 0;
+		padding: 0;
+		justify-content: center;
+	}
+	.link-box{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+	}
+	.link{
+		font-size: 80%;
+	}
+	.center-box{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.thirdP{
+		padding: 20px;
+		letter-spacing: .5px;
+		min-width: 300px;
+	}
+	#l1{
+		order: 1;
+	}
+	#l2{
+		order: 2;
+	}
+	#l3{
+		order: 3;
+	}
+	.link:hover{
+		color: #FFC4C4;
+		cursor: pointer;
+	}
+	.sn-i{
+		order: 1;
+		padding-left: 10px;
+		padding-right: 10px;
+		background:none;
+		border: none;
+		color: #bc2a8d;
+		text-decoration: none;
+	}
+		.sn-i:hover{
+			background:none;
+			border: none;
+			color: #E1306C;
+			text-decoration: none;
+		}
+	.sn-f{
+		order: 2;
+		padding-left: 10px;
+		padding-right: 10px;
+		background:none;
+		border: none;
+		color: #3C5A99;
+		text-decoration: none;
+	}
+		.sn-f:hover{
+			background:none;
+			border: none;
+			color: #1961F8;
+			text-decoration: none;
+		}
+	.sn-t{
+		order: 2;
+		padding-left: 10px;
+		padding-right: 10px;
+		background:none;
+		border: none;
+		color: #0084b4;
+		text-decoration: none;
+	}
+		.sn-t:hover{
+			background:none;
+			border: none;
+			color: #1DCAFF;
+			text-decoration: none;
+		}
+	.link-box button{
+		font-family: 'Oswald', sans-serif;
+		width: 200px;
+		height: 50px;
+		line-height: 22px;
+		font-size: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #470C22;
+		color: white;
+		border: none;
+	}
+	.footer-txt{
+		padding: 25px;
+	    letter-spacing: 1px;
+	    color: white;
+	}
+	.fab:hover{
+		text-shadow: 0px 0px 3px white; 
+	}
+	button > h1, p, label{
+		text-align: center;
+	} 
+@media screen and (max-width: 769px){
+	.footer-txt{
+	    padding-left: 25px;
+	    padding-right: 25px;
+	    color: whitesmoke;
+	}
+	#link-box{
+		display: block;
+		width: 100%;
+	}
+		#link-box .thirdP{
+			display: block;
+			width: 100%;
+		}
+		#buttons-box{
+			display: block;
+			width: 100vw;
+		}
+		#buttons-box button{
+			display: block;
+			width: 60vw;
+			margin-left: 20vw;
+			margin-right: 20vw;
+		}
+}
