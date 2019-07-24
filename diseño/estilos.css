@@ -3,13 +3,9 @@ html {
   overflow-x: hidden;
 }
 html, input, label,p, h1, h2, h3, h4, h5, h6, legend, button, ul, li, a {
-    /*font-family: 'Raleway', sans-serif;*/
-    /*font-family: 'Roboto Condensed', sans-serif;*/
-	/*font-family: 'Shadows Into Light Two', cursive;*/
-    /*font-family: 'Indie Flower', cursive;*/
-	/*font-family: 'Loved by the King', cursive;*/
-	/*font-family: 'Annie Use Your Telescope', cursive;*/
-  font-family: 'Oswald', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: 'Roboto Condensed', sans-serif;
 }
  /*font-family: 'Hind', sans-serif; */
 .scrollable::-webkit-scrollbar {
@@ -23,7 +19,7 @@ html, input, label,p, h1, h2, h3, h4, h5, h6, legend, button, ul, li, a {
   background-color: beige;
   outline: 1px solid slategrey;
 }
- .glowG{
+.glowG{
   /*text-shadow: 1px 1px #dca327;*/
   text-shadow: 1px 1px beige;
 }
@@ -47,13 +43,6 @@ body::-webkit-scrollbar-track {
 	color: beige !important;
 }
 .franquicias_ul:hover{
-	color: #dca327 !important;
-}
-.index_ul{
-	color: #b5b1b0 !important;
-	/*b5b1b0*/
-}
-.index_ul:hover{
 	color: #dca327 !important;
 }
 #navbar_toggle_btn{

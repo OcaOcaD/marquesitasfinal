@@ -82,9 +82,9 @@
 			text-decoration: none;
 		}
 		#prod_list{
-			height: fit-content;
+			position: relative;
+			height: auto;
 			background-color: beige;
-
 		}
 		#controles_menu{
 			height: 100px;

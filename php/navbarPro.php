@@ -11,7 +11,7 @@
     }else if ( $pestaña_actual == "index.php" ){
       $logoPath = "diseño/img/logoPro.png";
       $link_productos = "goToByScroll('#prodMenu')";
-      $link_franquicias = "window.location.href = 'php/franPro.php'";
+
       $link_central = "goToByScroll('#videoBox')";
       $link_sucursales = "goToByScroll('#franquiciasPro')";
       $link_contacto = "goToByScroll('#footer')";
@@ -19,7 +19,7 @@
     }
  ?>
     <div id="navBox" class="">
-      <div id="shadow"></div>
+      <div id="shadow" class="shadow"></div>
       <div id="object">
         <nav id="navBar-box" class="navbar navbar-expand-lg">
           <button id="togglerBtn" class="navbar-toggler noDeco" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
               </button>
               </li>
               <li class="nav-item">
-                <button onclick="<?php echo $link_franquicias ?>"class="noDeco navButton">
+                <button id="franqLink" class="noDeco navButton">
                 FRANQUICIAS
               </button>
               </li>
@@ -59,6 +59,50 @@
       </div>
       
     </div>
-<div id="vidPusher">
+
+<script>
+
+!(function(d){
+  $('#franqLink').bind('click', function(e) {
+    e.preventDefault(); 
+    if (e.metaKey){
+      window.location = "php/franPro.php";
+    }else{
+      window.open('php/franPro.php','_blank');
       
-    </div>
+    }
+  });
+  function changeNavBG(type){
+    nb = d.getElementsByClassName("shadow");
+    logotipo = d.getElementsByClassName("navbar__logo__img");
+    switch( type ){
+        case 0:{
+            $(nb).css({
+                transition : 'background\-image 3s ease-out',
+                "background-image" : "linear-gradient(to top, transparent 5%, black 95%)",
+                "opacity" : "0.7",
+            });
+            /*$(logotipo).attr("src","img/basic/logotipo.png");*/
+            break;
+        }
+        case 1:{
+            $(nb).css({
+                transition : 'background\-image 3s ease-out',
+                "background-image" : "linear-gradient(to top, black ,#1D1D1B)",
+                "opacity" : "1",
+            });
+            /*$(logotipo).attr("src","img/basic/logotipo_blanco.png");*/
+            break;
+        }
+    }
+}
+$(d).scroll(function() { 
+    if( $(window).scrollTop() > 100  ) {   
+      changeNavBG(1);
+    }else{
+        changeNavBG(0);
+    }
+});
+
+}(document));
+</script>

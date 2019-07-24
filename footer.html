@@ -1,4 +1,8 @@
   <style>
+    .footer_sm_txt{
+      position: fixed;
+      display: none;
+    }
     .footer{
       background-color: #3b2314; 
       background-color: black; 
@@ -41,12 +45,53 @@
           padding-right: 1em;
           padding-left: 1em;
         }
+
+        @media screen and (max-width: 769px){
+          .footer_sm_txt{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            height: 30px;
+            width: 100vw;
+            position: fixed;
+            bottom: 40px;
+            margin: 0;
+            padding: 0;
+          }
+            .footer_sm_txt label{
+              color: white
+            }
+          .footer__left{
+            display: none;
+          }
+          .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 40px;
+          }
+          .footer__right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+        }
   </style>
+  <div class="footer_sm_txt">
+    <label>2019</label>
+    <!--<label class="link" onclick="window.location.href = 'marquenieve.com.mx/nueva'">W W W . M A R Q U E N I E V E . C O M . M X</label>-->
+    <label class="link" onclick="window.location.href = '#missing'">AVISO DE PRIVACIDAD</label>  
+  </div>
   <div id="footer" class="footer">
     <div class="footer__left">
       <label>2019</label>
-      <label class="link" onclick="window.location.href </center>= 'marquenieve.com.mx/nueva'">W W W . M A R Q U E N I E V E . C O M . M X</label>
-      <label class="link" onclick="window.location.href = '</center>#missing'">AVISO DE PRIVACIDAD</label>
+      <label class="link" onclick="window.location.href = 'marquenieve.com.mx/nueva'">W W W . M A R Q U E N I E V E . C O M . M X</label>
+      <label class="link" onclick="window.location.href = '#missing'">AVISO DE PRIVACIDAD</label>
     </div>
     <div class="footer__right">
         <button onclick="window.open('https\://twitter.com/mlasoriginales')" class="sn-t"><i class="fab fa-twitter fa-2x"></i></button>

@@ -130,7 +130,7 @@
       </div>
     </div>
   </section>
-  <section id="prod_list"  style = "display: none;">
+  <section id="prod_list"  style = "display: block;">
     <div class="menu_limpio">
       <div class="block">
         <div class="h1">

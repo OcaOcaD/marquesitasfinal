@@ -4,18 +4,19 @@
  	<div id="productosBox">
 		<div id="titleMenu">
 		<!--<img src="diseño/img/original.png" alt="">--><h1>PRODUCTOS</h1>
+		<p>!Da clic y descubre!</p>
 		</div>
 	    <div id="menuBox">
 	    	<div class="menuOpt left">
 				<img name="paletas" onclick="loadMenu(this)" src="diseño/img/paletas.png" alt="" class="menuOpt-img menuOpt-txt-left">
 				<div class="menuOpt-txt">
-					<h1 class="menuOpt-txt-left">PALETAS</h1>
+					<h1 name="paletas" onclick="loadMenu(this)" class="menuOpt-txt-left">PALETAS</h1>
 				</div>
 	    	</div>
 	    	<div class="menuOpt right">
 				<img name="nieves" onclick="loadMenu(this)" src="diseño/img/nieves.png" alt="" class="menuOpt-img menuOpt-txt-right">
 				<div class="menuOpt-txt">
-					<h1 class="menuOpt-txt-right">NIEVES</h1>
+					<h1 name="nieves" onclick="loadMenu(this)" class="menuOpt-txt-right">NIEVES</h1>
 				</div>
 	    	</div>
  		</div>
@@ -27,13 +28,13 @@
 	    	<div class="menuOpt left">
 				<img name="bebidas" onclick="loadMenu(this)" src="diseño/img/bebidas.png" alt="" class="menuOpt-img menuOpt-txt-left">
 				<div class="menuOpt-txt">
-					<h1 class="menuOpt-txt-left">BEBIDAS</h1>
+					<h1 name="bebidas" onclick="loadMenu(this)" class="menuOpt-txt-left">BEBIDAS</h1>
 				</div>
 	    	</div>
 	    	<div class="menuOpt right">
 				<img name="marquesitas" onclick="loadMenu(this)" src="diseño/img/marquesitaFresa.png" alt="" class="menuOpt-img menuOpt-txt-right">
 				<div class="menuOpt-txt">
-					<h1 class="menuOpt-txt-right">MARQUESITAS</h1>
+					<h1 name="marquesitas" onclick="loadMenu(this)" class="menuOpt-txt-right">MARQUESITAS</h1>
 				</div>
 	    	</div>
 	    </div>
@@ -49,7 +50,6 @@
 		    </div>
 		  </div>
 		</div>
-		</section>
   	</section>
 <!-- The Modal -->
 <div id="myModal" class="modal close">

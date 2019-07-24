@@ -10,52 +10,12 @@ html, body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100%;
     min-height: 100vh;
     padding-bottom: calc(40px + 0px);
 }
-    .statesContainer{
-        order: 2;
-        background-color: #3b2314;
-        background-color: #20130b;
-        background-color: black;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        padding-top: 2em; 
-    }
-    .states__info{
-        display: flex;
-        justify-content: space-evenly;
-        min-height: 100%;
-        width: 100%;
-        padding-left: 2em;
-        padding-right: 2em;
-        
-    }
-        .states__info ul{
-            list-style: none;
-            padding: 0;
-        }
-    .state{
-        padding-left: 1em;
-        padding-right: 2em;
-    }
-        .state h1{
-            font-size: 100%;
-            color: beige;
-            /*color: #FFC4C4;*/
-        }
-        .state p{
-            text-align: justify;
-            margin-bottom: 0;
-            font-size: 80%;
-            color: whitesmoke;
-            
-        }
     .mapcontainer{
         order: 1;
-        width: 50%;
+        width: 80%;
     }
 .container {
     margin: auto;
@@ -103,9 +63,9 @@ html, body{
 .mapael .mapTooltip {
     position: absolute;
     background-color: #474c4b;
-    moz-opacity: 0.70;
-    opacity: 0.70;
-    filter: alpha(opacity=70);
+    moz-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity=100);
     border-radius: 10px;
     padding: 1em;
     z-index: 1000;
@@ -114,4 +74,27 @@ html, body{
 }
 .area{
     /*fill: beige;*/
+}
+.tlt{
+    text-align: left;
+    font-size: 110%;
+}
+.tl{
+    text-align: left;
+    font-size: 80%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 769px){
+    .todo{
+        padding-bottom: calc(70px + 0px);
+    }
+    .states__info{
+        width: 100vw;
+        flex-direction: column;
+
+    }
+    .mapcontainer{
+        width: 90%;
+    }
 }
