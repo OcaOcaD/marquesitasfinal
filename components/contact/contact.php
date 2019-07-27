@@ -1,105 +1,96 @@
-<div class="contact">
+<div id = "contact" class="contact">
+    <h1 class="contact__title">Te esperamos en cualquier de nuestras sucursales</h1>
     <div class="contact__row">
-
-    <div class="suc__shadow__gdl"></div>
-        <div class="gdl__cont">
-            
-            <div class="suc__gdl__gdl">
-                <div class="suc__gdl">
-                    <div class="suc__gdl__img">
-                        <img class="suc__gdl__img_img" src="components/contact/img/guadalupe.jpg" alt="Sin foto de sucursal">
-                    </div>
-                    <div class="suc__gdl__title">
-                        <h1>ZMG</h1>
-                        <h1>,</h1>
-                        <p>JALISCO</p>
-                    </div>
-                    <div class="suc__gdl__info">
-                        <p>Av. Guadalupe 6370-D 45030, Zapopan</p>
-                    </div>
-                </div>
-
-                <div class="suc__gdl">
-                    <div class="suc__gdl__img">
-                        <img class="suc__gdl__img_img" src="components/contact/img/gigantera.jpg" alt="Sin foto de sucursal">
-                    </div>
-                    <div class="suc__gdl__title">
-                        <h1>ZMG</h1>
-                        <h1>,</h1>
-                        <p>JALISCO</p>
-                    </div>
-                    <div class="suc__gdl__info">
-                        <p>Chivas Gigantera, Calle Francisco I. Madero 6000, Jocotán, 45017, Zapopan</p>
-                    </div>
-                </div>
-
-                <div class="suc__gdl">
-                    <div class="suc__gdl__img"> 
-                        <img class="suc__gdl__img_img" src="components/contact/img/akron.jpg" alt="Sin foto de sucursal">
-                    </div>
-                    <div class="suc__gdl__title">
-                        <h1>ZMG</h1>
-                        <h1>,</h1>
-                        <p>JALISCO</p>
-                    </div>
-                    <div class="suc__gdl__info">
-                        <p>Estadio Akron: Todos los partidos de Chivas como local</p>
-                    </div>
-                </div>
+        <div class="suc">
+            <div class="suc__shadow"></div>
+            <div class="suc__img">
+                <img class="suc__img_img" src="components/contact/img/guadalupe.jpg" alt="Sin foto de sucursal">
             </div>
-            <div class="suc__gdl__gdl">
-                <div class="suc__gdl">
-                    <div class="suc__gdl__img">
-                        <img class="suc__gdl__img_img" src="components/contact/img/charros.jpg" alt="Sin foto de sucursal">
-                    </div>
-                    <div class="suc__gdl__title">
-                        <h1>ZMG</h1>
-                        <h1>,</h1>
-                        <p>JALISCO</p>
-                    </div>
-                    <div class="suc__gdl__info">
-                        <p>Estadio Charros: De Octubre a Enero, Zapopan</p>
-                    </div>
-                </div>
-                <div class="suc__gdl">
-                    <div class="suc__gdl__img">
-                        <img class="suc__gdl__img_img" src="components/contact/img/charros.jpg" alt="Sin foto de sucursal">
-                    </div>
-                    <div class="suc__gdl__title">
-                        <h1>ZMG</h1>
-                        <h1>,</h1>
-                        <p>JALISCO</p>
-                    </div>
-                    <div class="suc__gdl__info">
-                        <p>SAN NICOLAS DE BARI: TODOS LOS LUNES DE 4:00 A 11:00 PM</p>
-                    </div>
-                </div>
-                <div class="suc__gdl">
-                    <div class="suc__gdl__img">
-                        <img class="suc__gdl__img_img" src="components/contact/img/toros.jpg" alt="Sin foto de sucursal">
-                    </div>
-                    <div class="suc__gdl__title">
-                        <h1>ZMG</h1>
-                        <h1>,</h1>
-                        <p>JALISCO</p>
-                    </div>
-                    <div class="suc__gdl__info">
-                        <p>Plaza de toros, corridas</p>
-                    </div>
-                </div>
+            <div class="suc__state">
+                <h1>ZMG,</h1>
+                <p>JALISCO</p>
+            </div>
+            <div class="suc__info">
+                <p class="suc__address">Av. Guadalupe 6370-D 45030, Zapopan.</p>
             </div>
         </div>
-        
+        <div class="suc">
+            <div class="suc__shadow"></div>
+            <div class="suc__img">
+                <img class="suc__img_img" src="components/contact/img/gigantera.jpg" alt="Sin foto de sucursal">
+            </div>
+            <div class="suc__state">
+                <h1>ZMG,</h1>
+                <p>JALISCO</p>
+            </div>
+            <div class="suc__info">
+                <p class="suc__address">Chivas Gigantera, Calle Francisco I. Madero 6000, Jocotán, 45017, Zapopan.</p>
+            </div>
+        </div>
+        <div class="suc">
+            <div class="suc__shadow"></div>
+            <div class="suc__img">
+                <img class="suc__img_img" src="components/contact/img/akron.jpg" alt="Sin foto de sucursal">
+            </div>
+            <div class="suc__state">
+                <h1>ZMG,</h1>
+                <p>JALISCO</p>
+            </div>
+            <div class="suc__info">
+                <p class="suc__address">Estadio Akron: Todos los partidos de Chivas como local.</p>
+            </div>
+        </div>
     </div>
+    <div class="contact__row">
+        <div class="suc">
+            <div class="suc__shadow"></div>
+            <div class="suc__img">
+                <img class="suc__img_img" src="components/contact/img/charros.jpg" alt="Sin foto de sucursal">
+            </div>
+            <div class="suc__state">
+                <h1>ZMG,</h1>
+                <p>JALISCO</p>
+            </div>
+            <div class="suc__info">
+                <p class="suc__address">Estadio Charros: De Octubre a Enero, Zapopan.</p>
+            </div>
+        </div>
+        <div class="suc">
+            <div class="suc__shadow"></div>
+            <div class="suc__img">
+                <img class="suc__img_img" src="components/contact/img/bari.jpg" alt="Sin foto de sucursal">
+            </div>
+            <div class="suc__state">
+                <h1>ZMG,</h1>
+                <p>JALISCO</p>
+            </div>
+            <div class="suc__info">
+                <p class="suc__address">SAN NICOLAS DE BARI: TODOS LOS LUNES DE 4:00 A 11:00 PM</p>
+            </div>
+        </div>
+        <div class="suc">
+            <div class="suc__shadow"></div>
+            <div class="suc__img">
+                <img class="suc__img_img" src="components/contact/img/toros.jpg" alt="Sin foto de sucursal">
+            </div>
+            <div class="suc__state">
+                <h1>ZMG,</h1>
+                <p>JALISCO</p>
+            </div>
+            <div class="suc__info">
+                <p class="suc__address">Plaza de toros, corridas.</p>
+            </div>
+        </div>
+    </div>
+
     <div class="contact__row">
         <div class="suc">
         <div class="suc__shadow"></div>
             <div class="suc__img">
-                <img src="components/contact/img/torreon.jpg" alt="Sin foto de sucursal">
+                <img class="suc__img_img" src="components/contact/img/torreon.jpg" alt="Sin foto de sucursal">
             </div>
             <div class="suc__state">
-                <h1>TORREÓN</h1>
-                <h1>,</h1>
+                <h1>TORREÓN,</h1>
                 <p>COAHUILA</p>
             </div>
             <div class="suc__info">
@@ -112,11 +103,10 @@
         <div class="suc">
         <div class="suc__shadow"></div>
             <div class="suc__img">
-                <img src="components/contact/img/sinaloa.jpg" alt="Sin foto de sucursal">
+                <img class="suc__img_img" src="components/contact/img/sinaloa.jpg" alt="Sin foto de sucursal">
             </div>
             <div class="suc__state">
-                <h1>CULIACÁN</h1>
-                <h1>,</h1>
+                <h1>CULIACÁN,</h1>
                 <p>SINALOA</p>
             </div>
             <div class="suc__info">
@@ -129,11 +119,10 @@
         <div class="suc">
             <div class="suc__shadow"></div>
             <div class="suc__img">
-                <img src="components/contact/img/guanajuato.jpg" alt="Sin foto de sucursal">
+                <img class="suc__img_img" src="components/contact/img/guanajuato.jpg" alt="Sin foto de sucursal">
             </div>
             <div class="suc__state">
-                <h1>LEÓN</h1>
-                <h1>,</h1>
+                <h1>LEÓN,</h1>
                 <p>GUANAJUATO</p>
             </div>
             <div class="suc__info">
@@ -147,11 +136,10 @@
         <div class="suc">
             <div class="suc__shadow"></div>
             <div class="suc__img">
-                <img src="components/contact/img/hidalgo.jpg" alt="Sin foto de sucursal">
+                <img class="suc__img_img" src="components/contact/img/hidalgo.jpg" alt="Sin foto de sucursal">
             </div>
             <div class="suc__state">
-                <h1>PACHUCA</h1>
-                <h1>,</h1>
+                <h1>PACHUCA,</h1>
                 <p>HIDALGO</p>
             </div>
             <div class="suc__info">
@@ -163,11 +151,10 @@
         <div class="suc">
             <div class="suc__shadow"></div>
             <div class="suc__img">
-                <img src="components/contact/img/edomex.jpg" alt="Sin foto de sucursal">
+                <img class="suc__img_img" src="components/contact/img/edomex.jpg" alt="Sin foto de sucursal">
             </div>
             <div class="suc__state">
-                <h1>TOLUCA</h1>
-                <h1>,</h1>
+                <h1>TOLUCA,</h1>
                 <p>ESTADO DE MÉXICO</p>
             </div>
             <div class="suc__info">
@@ -178,11 +165,10 @@
         <div class="suc">
             <div class="suc__shadow"></div>
             <div class="suc__img">
-                <img src="components/contact/img/veracruz.jpg" alt="Sin foto de sucursal">
+                <img class="suc__img_img" src="components/contact/img/veracruz.jpg" alt="Sin foto de sucursal">
             </div>
             <div class="suc__state">
-                <h1>VERACRUZ</h1>
-                <h1>,</h1>
+                <h1>VERACRUZ,</h1>
                 <p>VERACRUZ</p>
             </div>
             <div class="suc__info">

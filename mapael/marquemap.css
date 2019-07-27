@@ -88,6 +88,8 @@ html, body{
 @media screen and (max-width: 769px){
     .todo{
         padding-bottom: calc(70px + 0px);
+        min-height: 50vh;
+        height: auto;
     }
     .states__info{
         width: 100vw;

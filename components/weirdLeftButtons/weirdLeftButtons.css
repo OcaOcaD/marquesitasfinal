@@ -1,0 +1,137 @@
+#navF nav{
+    position: fixed;
+    height: 100vh;
+    margin-top: 50vw;
+    margin-left: 0px;
+    text-align: center;
+    z-index: 1000;
+    transform: translate(0%,-12%);
+}
+  .navF {
+    width: 30px;
+    height: 30px;
+    display: block !important;
+    
+
+  }
+  .navF li {
+      border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: rgba(0,0,0,.6);
+      width: 100%;
+    list-style: none;
+
+  }
+  .navF li:hover {
+      border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgba(0,0,0,.6);
+      width: 180px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: left
+
+  }
+
+  li p {
+      width: 100%;
+    display: inline-block;
+    line-height: 100%;
+    color: beige;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  li .cat_nmb{
+      width: 20%;
+  }
+  li .cat_txt{
+      width: 80%;
+      transition: 0.4s;
+      width: 0px;
+      display: none;
+      color: beige;
+  }
+  li:hover .cat_txt{
+      width: 180px;
+      display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px beige;
+  }
+  .navF p:hover{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px beige;
+  }
+        #solicitaFranquicia{
+          width: 50px;
+          height: 50px;
+          transition:1s;
+          padding-top:.5em;
+          padding-bottom:.5em;
+      }
+      #solicitaFranquicia:hover{
+          transform: translate(-5px, 0px);
+          height: 50px;
+          width: 280px;
+      }
+        .sol-txt{
+            display:none;
+            transition:0.5s;
+        }
+        .sol-p{
+            display:none;
+            transition:display .5s;
+            transition:width 2s;
+            width:0px;
+        }
+      #solicitaFranquicia:hover .sol-txt{
+          text-align:center;
+            display: block;        	      
+      }
+      #solicitaFranquicia:active .sol-txt{
+          text-align:center;
+            display: block;        	      
+      }
+      #solicitaFranquicia:hover .sol-p{
+          width:280px;
+          text-align:center;
+            display: block;        	      
+      }
+      #solicitaFranquicia:active .sol-p{
+          width:280px;
+          text-align:center;
+            display: block;        	      
+      }
+      #solicitaFranquicia button{
+          background:none;
+          border:none;
+          color: white;
+      }
+      
+        .hide {
+          visibility: hidden;
+        }
+        
+        .button {
+            
+          background: rgba(0,0,0,.6);
+          text-align: center;
+          cursor: pointer;
+          z-index: 1;
+          border-top-right-radius: 25px;
+          border-bottom-right-radius: 25px;
+          transition: background 0.5s
+        }
+        
+        .button:hover {
+          background: #3b2314;
+        }
+
+@media only screen and (max-width: 769px){
+    #navF{
+        display: none;
+    }
+
+}

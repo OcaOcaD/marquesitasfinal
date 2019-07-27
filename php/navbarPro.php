@@ -6,7 +6,7 @@
       $link_franquicias = "#";
       $link_central = "window.location.href = '../index.php#videoBox'";
       $link_sucursales = "window.location.href = '../index.php#franquiciasPro'";
-      $link_contacto = "window.location.href = '../index.php#contacto'";
+      $link_contacto = "window.location.href = '../index.php#contact'";
       $ul_color_class = "franquicias_ul";
     }else if ( $pestaña_actual == "index.php" ){
       $logoPath = "diseño/img/logoPro.png";
@@ -14,7 +14,7 @@
 
       $link_central = "goToByScroll('#videoBox')";
       $link_sucursales = "goToByScroll('#franquiciasPro')";
-      $link_contacto = "goToByScroll('#footer')";
+      $link_contacto = "goToByScroll('#contact')";
       $ul_color_class = "index_ul";
     }
  ?>

@@ -1,0 +1,123 @@
+
+    
+    <div class="states__info">        
+        <div class="state">
+                <h1>TORREON,<small> COAHUILA</small></h1>
+                <ul>
+                    <li>
+                        
+                        <p>
+                            Blvd. Independencia #1754, </p><p>Col. Navarro, C.P. 27100 
+                        </p>
+                        <p> torreón@marquenieve.com.mx   </p>
+                        <p>
+                            Tel: 8712367392                             
+                        </p>
+                    </li>
+                </ul>
+        </div>
+        <div class="state">
+                <h1>HIDALGO</h1>
+                <ul>
+                    <li>
+                        <p>
+                            PACHUCA
+                        </p>
+                        <p>
+                            BLVD. FELIPE ANGELES, COL. VENTA PRIETA, 42080 PACHUCA DE SOTO, HIDALGO, MÉXICO.
+                        </p>
+                        <p>
+                                TELEFONO: 7717749916 - CORREO: pachuca@marquenieve.com.mx                                
+                        </p>
+                    </li>
+                </ul>
+        </div>
+        <div class="state">
+            <h1>JALISCO</h1>
+            <ul>
+                <li>
+                    <p>
+                        AV. GUADALUPE 6370-D 45030 ZAPOPAN, JALISCO
+                    </p> 
+                </li>
+                <li>
+                    <p>
+                        GIGANTERA: MARTES A VIERNES 3:30 A 8:00 PM
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        SAN NICOLAS DE BARI: TODOS LOS LUNES DE 4:00 A 11:00 PM
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        ESTADIO AKRON: TODOS LOS PARTIDOS DE CHIVAS COMO LOCAL
+                    </p>
+                </li>
+                <li>
+                    <p><i class="fas fa-map-marked-alt"></i>
+                        ESTADIO CHARROS: DE OCTUBRE A ENERO
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        PLAZA DE TOROS: CORRIDAS
+                    </p>
+                    <p>
+                        TELEFONO: 3333992842 - CORREO: ventas@marquenieve.com.mx
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="state">
+            <h1>SINALOA</h1>
+            <ul>
+                <li>
+                    <p>CULIACAN</p>
+                    <p><i class="fas fa-map-marked-alt"></i> DR MORA 1336, LAS QUINTAS 80060, CULIACAN, SINALOA</p>
+                    <p>TELEFONO: 6675074361 - CORREO: culiacan@marquenieve.com.mx</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="states__info">    
+        <div class="state">
+            <h1>GUANAJUATO</h1>
+            <ul>
+                <li>
+                    <p>LEON</p>
+                    <p><i class="fas fa-map-marked-alt"></i> BLVD. CLOUTHIER 304, LEON GTO </p>
+                    <p>TELEFONO: 4775773122 - CORREO: león@marquenieve.com.mx</p>
+                </li>
+            </ul>
+        </div>
+        <div class="state">
+            <h1>VERACRUZ</h1>
+            <ul>
+                <li>
+                    <p>VERACRUZ</p>
+                    <p><i class="fas fa-map-marked-alt"></i> Estadio Luis Pirata Fuentes</p>
+                    <p>TELEFONO: 2299335647</p>
+                </li>
+            </ul>
+        </div>
+        <div class="state">
+            <h1>ESTADO DE MÉXICO</h1>
+            <ul>
+                <li>
+                    <p>TOLUCA</p>
+                    <p><i class="fas fa-map-marked-alt"></i> Estadio Nemesio Diez</p>
+                    <p>TELEFONO: 7221585981 - CORREO: @marquenieve.com.mx</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="mapcontainer">
+        <div class="map">
+            <span>Alternative content for the map</span>
+        </div>
+        <div class="areaLegend"></div>
+        <div class="plotLegend"></div>
+    </div>

@@ -72,7 +72,10 @@
 <section id="franquiciasPro">
 	
 	<div id="fran_Box" class="">
-		<h1 class="franText">¡Estamos en toda la república!</h1>
+		<h1 class="franText" style="text-align: center;
+		 color: #6f4d1f;
+		font-size: 250%;
+		text-align: center;">¡Estamos en toda la república!</h1>
 		<p class="franText"><small>Da clic en la sucursal del mapa y vísitanos</small></p>
 	</div>
 	<?php	

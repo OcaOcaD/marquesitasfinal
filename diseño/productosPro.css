@@ -39,6 +39,7 @@
 		height: 20%;
 	}
 		#titleMenu h1{
+			font-family: 'Roboto Condensed', sans-serif;
 			text-align: center;
 			color: white;
 			font-weight: 800;
@@ -47,6 +48,7 @@
 			font-size: 300%;
 		}
 		#titleMenu p{
+			font-family: 'Roboto Condensed', sans-serif;
 			color: white;
 			font-weight: 800;
 			font-size: 100%;
@@ -142,21 +144,7 @@
 		color: beige;
 		color: #3c2213;
 	}
-	#smCircle{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 150px;
-		height: 150px;
-		border-radius: 50%;
-		border: 1px solid #3b2314;
-		background-color: white;
-		margin-left: 10px;
-	}
-	#smIsla{
-		width: 100px;
-		height: auto;
-	}
+	
 	.text-btn{
 		display: flex;
 		background: none;
@@ -246,6 +234,9 @@
 		padding-bottom: 15px;
 		font-family: 'Roboto Condensed', sans-serif;
 	}
+	#franText{
+		text-align: center;
+	}
 	.fran_Box h1{
 		color: #6f4d1f;
 		font-size: 250%;
@@ -316,6 +307,7 @@
 		margin-bottom: 0px;
 	}
 		#titleMenu h1{
+			font-family: 'Roboto Condensed', sans-serif;
 			color: white;
 			font-weight: 800;
 			font-size: 55px;
@@ -365,13 +357,9 @@
 			margin-left: 50%;
 			transform: scale(2) translate(50%,-25%);
 		}
-	#smCircle{
-		display: flex;
-    	width: 100%;
-    	border: 1px solid #A21845;
+	#franText{
+		text-align: center;
 	}
-
-
 	.menuOpt h1{
 		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 130%;

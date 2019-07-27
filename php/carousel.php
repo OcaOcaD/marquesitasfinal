@@ -55,10 +55,7 @@
 
 <script>
 $('.carousel').carousel({
-      interval: 1000,
-      pause: false
-    })
-    $('.carousel').carousel({
-      pause: "false"
-  });
+  interval: 4000,
+  pause: false
+})
 </script>

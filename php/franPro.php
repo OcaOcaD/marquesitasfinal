@@ -9,68 +9,32 @@
 	<link rel="stylesheet" type="text/css" href="../diseño/parallax.css">
 	<link rel="stylesheet" type="text/css" href="../diseño/franSmall.css">
 	<link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Permanent+Marker|Roboto+Condensed" rel="stylesheet">
-
-</head>
+	
+	<link rel="stylesheet" href="../components/weirdLeftButtons/weirdLeftButtons.css">
+	<link rel="stylesheet" href="../components/slides/saludo.php">
+	
+</head>	
 
 <body>
 	
-	<?php include("navbarPro.php"); ?>
+	<?php 
+		include("navbarPro.php"); 
+		include("../components/weirdLeftButtons/weirdLeftButtons.php");
+		include("../components/slides/saludo.php");
+	?>
 	
-  <!-- svg is defined here because of a Safari bug with <use> -->
-  <svg>
-    <defs>
-      <g id="p">
-        <path opacity=".2" d="M0 2h252s-3.3 40.7-2.7 128.3C249 216 252 272 252 272s-88-2-124.3-2C91.3 270 0 272 0 272V0z"/><path fill="#f4f3f1" d="M0 0h248v270H0z"/><path fill="#4f5150" d="M8 10h233v203H8z"/>
-      </g>
-      <g id="polaroid">
-        <use xlink:href="#p" transform="rotate(15)" x="175" y="50"/>
-        <use xlink:href="#p" transform="rotate(-5)" x="5" y="25"/>
-      </g>
-    </defs>
-  </svg>
-
-<div id="navF">
-  <nav>
-    <ul class="navF">
-    <div id="solicitaFranquicia" class="button animation">
-        <button class="sol-txt" onclick="window.location.href = 'https://www.daconsultoria.com/mailing/2017/MARQUESITAS/Contacto/FormatoDeSolicitud/RegistroContacto/index.html'" >
-            <p class="sol-p">Solicita tu franquicia aquí </p>
-        </button>
-    </div> 
-      <li onclick="goToByScroll('#slide-1')">
-      	<p class="cat_nmb" >1</p>
-      	<p class="cat_txt" >Bienvenido</p>
-      </li>
-      <li onclick="goToByScroll('#slide-2')">
-      	<p class="cat_nmb" >2</p>
-      	<p class="cat_txt" >Franquicias</p>
-      </li>
-      <li onclick="goToByScroll('#slide-3')">
-      	<p class="cat_nmb" >3</p>
-      	<p class="cat_txt" >Modalidades</p>
-      </li>
-      <li>
-      	<p class="cat_nmb" onclick="goToByScroll('#slide-4')">4</p>
-      	<p class="cat_txt" href="#slide-5">Inversión</p>
-      </li>
-      <li>
-      	<p class="cat_nmb" onclick="goToByScroll('#slide-6')">5</p>
-      	<p class="cat_txt" href="#slide-6">Productos</p>
-      </li>
-    </ul>
-  </nav>
-</div>
 
   <div class="slides">
     <div class="slide" id="slide-1">
-    <div class="slide__content">
-    	<div id="slide_bg" class="slide__bg"></div>
-	    <img id = "pngFront" src="../diseño/img/productosF.png">
-    	<div id="tituloBox">
-	    	<h1 id="slide-1-title">¡Hola!</h1>
-    	</div>
-
-    </div>
+		<div class="slide__content">
+			<div id="slide_bg" class="slide__bg">
+				<img src="../diseño/img/saludo_bg.jpg" alt="">
+			</div>
+			<img id = "pngFront" src="../diseño/img/productosF.png">
+			<div id="tituloBox">
+				<h1 id="slide-1-title">¡Hola!</h1>
+			</div>
+		</div>
 	</div>
 
     <div class="slide" id="slide-2">
